@@ -21,7 +21,7 @@
                 android:gravity="center"
                 >
                 <androidx.appcompat.widget.SwitchCompat
-                    android:id="@+id/switchDarkLight"
+                    android:id="@+id/switch1"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
@@ -133,6 +133,8 @@
                         tools:ignore="SpeakableTextPresentCheck" />
                 </com.google.android.material.textfield.TextInputLayout>
 
+
+
                 <Button
                     android:id="@+id/timeDialog"
                     android:layout_width="wrap_content"
@@ -158,8 +160,32 @@
                     android:text="Open Date Picker"
                     android:textAllCaps="false" />
 
-
-
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:iconifiedByDefault="false"
+                    android:visibility="gone"
+                    android:background="@drawable/search_bg"
+                    app:queryBackground="@android:color/transparent"
+                    app:queryHint="Search" />
+                <Button
+                    android:id="@+id/simpleAlertDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Simple Alert Dialog"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/customAlertDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Custom Alert Dialog"
+                    android:textAllCaps="false" />
             </LinearLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
