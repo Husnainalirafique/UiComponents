@@ -11,29 +11,27 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:layout_marginHorizontal="20dp"
-                android:gravity="center"
-                >
+                android:gravity="center">
+
                 <androidx.appcompat.widget.SwitchCompat
                     android:id="@+id/switch1"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:text="Dark"
-                    />
+                    android:text="Dark" />
 
                 <RadioGroup
                     android:id="@+id/radioGroup"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    >
+                    android:orientation="horizontal">
 
                     <RadioButton
                         android:id="@+id/rb1"
@@ -68,8 +66,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Remember me!"
-                    />
+                    android:text="Remember me!" />
 
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/autoCompleteTv"
@@ -77,8 +74,7 @@
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="20dp"
                     android:completionThreshold="1"
-                    android:hint="Enter text"
-                    />
+                    android:hint="Enter text" />
 
                 <ProgressBar
                     android:id="@+id/progressBar"
@@ -88,30 +84,28 @@
                     android:layout_marginTop="20dp"
                     android:indeterminate="true"
                     android:indeterminateTint="#FF9100"
-                    android:visibility="gone"
-                    />
+                    android:visibility="gone" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:gravity="center"
-                    android:layout_marginTop="20dp"
-                    >
+                    android:layout_marginTop="20dp">
+
                     <Button
                         android:id="@+id/btnStart"
                         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="start "
-                        />
+                        android:text="start " />
 
                     <Button
                         android:id="@+id/btnStop"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
-                        android:text="stop"
-                        />
+                        android:text="stop" />
                 </LinearLayout>
 
 
@@ -134,7 +128,6 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
 
-
                 <Button
                     android:id="@+id/timeDialog"
                     android:layout_width="wrap_content"
@@ -143,6 +136,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Open Time Picker"
                     android:textAllCaps="false" />
+
                 <TextView
                     android:id="@+id/tvToSetTime"
                     android:layout_width="wrap_content"
@@ -150,7 +144,8 @@
                     android:textSize="20sp"
                     android:layout_marginTop="20dp"
                     android:text="Time is = "
-                    android:typeface="monospace"/>
+                    android:typeface="monospace" />
+
                 <Button
                     android:id="@+id/dateDialog"
                     android:layout_width="wrap_content"
@@ -170,6 +165,7 @@
                     android:background="@drawable/search_bg"
                     app:queryBackground="@android:color/transparent"
                     app:queryHint="Search" />
+
                 <Button
                     android:id="@+id/simpleAlertDialog"
                     android:layout_width="wrap_content"
@@ -178,6 +174,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Simple Alert Dialog"
                     android:textAllCaps="false" />
+
                 <Button
                     android:id="@+id/customAlertDialog"
                     android:layout_width="wrap_content"
@@ -185,6 +182,15 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:text="Custom Alert Dialog"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/customToast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="Custom Toast"
                     android:textAllCaps="false" />
             </LinearLayout>
         </ScrollView>

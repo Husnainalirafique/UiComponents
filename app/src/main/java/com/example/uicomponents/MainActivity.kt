@@ -1,15 +1,10 @@
 package com.example.uicomponents
 
-import android.app.Dialog
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.format.DateFormat.is24HourFormat
 import android.view.View
-import android.view.Window
 import android.widget.ArrayAdapter
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
@@ -29,6 +24,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setClickListener() {
+
+        binding.customToast.setOnClickListener {
+            showCustomToast(this@MainActivity,"Husnain")
+        }
 
         //Time Picker
         binding.timeDialog.setOnClickListener {
