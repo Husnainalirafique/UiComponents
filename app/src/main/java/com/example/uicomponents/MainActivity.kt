@@ -93,6 +93,9 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "confirm", Toast.LENGTH_SHORT).show()
             }
         }
+        val items = listOf("Apple","Banana","Crop","Danish")
+        val adapter = ArrayAdapter(this,android.R.layout.simple_dropdown_item_1line,items)
+        binding.autoCompleteTv
     }
 
     private fun showSimpleAlertDialog() {
